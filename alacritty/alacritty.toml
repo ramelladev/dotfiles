@@ -3,7 +3,7 @@
 general.import = ["~/.config/alacritty/themes/themes/gruvbox_dark.toml"]
 
 [font]
-size = 20
+size = 16
 
 [window.padding]
 x = 7

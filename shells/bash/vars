@@ -1,0 +1,2 @@
+[[ -e ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ]] && export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+[[ -e ~/.1password/agent.sock ]] && export SSH_AUTH_SOCK=~/.1password/agent.sock

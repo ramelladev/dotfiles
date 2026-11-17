@@ -1,0 +1,25 @@
+Schematic ID: 376b1f5084ba83e1f1d5555888c1745a6a70cc7e4b3a8f871ab88edfa5c87ae2
+
+customization:
+    systemExtensions:
+        officialExtensions:
+            - siderolabs/amd-npu
+            - siderolabs/amd-ucode
+            - siderolabs/amdgpu
+            - siderolabs/btrfs
+            - siderolabs/iscsi-tools
+            - siderolabs/libvirtd
+            - siderolabs/nfs-utils
+            - siderolabs/nvme-cli
+            - siderolabs/zfs
+    bootloader: sd-boot
+
+First Boot
+Here are the options for the initial boot of Talos Linux on a bare-metal machine or a generic virtual machine:
+
+SecureBoot ISO
+https://factory.talos.dev/image/376b1f5084ba83e1f1d5555888c1745a6a70cc7e4b3a8f871ab88edfa5c87ae2/v1.14.6/metal-amd64-secureboot.iso(checksums)(signature)(SecureBoot documentation)
+SecureBoot Disk Image
+https://factory.talos.dev/image/376b1f5084ba83e1f1d5555888c1745a6a70cc7e4b3a8f871ab88edfa5c87ae2/v1.14.6/metal-amd64-secureboot.raw.zst(checksums)(signature)(SecureBoot documentation)
+
+

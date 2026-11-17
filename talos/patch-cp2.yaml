@@ -1,0 +1,11 @@
+apiVersion: v1alpha1
+kind: UnattendedInstallConfig
+installer:
+  image: factory.talos.dev/metal-installer-secureboot/376b1f5084ba83e1f1d5555888c1745a6a70cc7e4b3a8f871ab88edfa5c87ae2:v1.14.6
+provisioning:
+  diskSelector:
+    match: disk.wwid == "eui.e8238fa6bf530001001b448b4b9df343"
+---
+apiVersion: v1alpha1
+kind: DHCPv4Config
+name: enp2s0f1

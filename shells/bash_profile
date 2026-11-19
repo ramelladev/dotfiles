@@ -8,8 +8,8 @@ if [[ -f ~/.bashrc ]]; then
 fi
 
 if [[ -d "$configdir/bash" ]]; then
-  [[ -f $configdir/bash/vars ]] && . $configdir/bash/completion
   [[ -f $configdir/bash/vars ]] && . $configdir/bash/vars
+  [[ -f $configdir/bash/completion ]] && . $configdir/bash/completion
   [[ -f $configdir/bash/alias ]] && . $configdir/bash/alias
   [[ -f $configdir/bash/eval ]] && . $configdir/bash/eval
 fi

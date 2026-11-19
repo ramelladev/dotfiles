@@ -1,0 +1,11 @@
+[user]
+    name = Brandon
+    email = brandon@ramella.dev
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    program = devpod-ssh-signature
+[commit]
+    gpgsign = true
+[user]
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMHtZAsP+SlsxU5+N3M8nw3u39G6DjrIIsQakOkbCKsM

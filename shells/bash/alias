@@ -1,2 +1,4 @@
 alias k="kubectl"
 alias v="vim"
+alias ls="ls --color"
+alias la="ls --color -a"

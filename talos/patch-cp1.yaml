@@ -1,7 +1,7 @@
 apiVersion: v1alpha1
 kind: UnattendedInstallConfig
 installer:
-  image: factory.talos.dev/metal-installer-secureboot/376b1f5084ba83e1f1d5555888c1745a6a70cc7e4b3a8f871ab88edfa5c87ae2:v1.14.6
+  image: factory.talos.dev/metal-installer-secureboot/a0f96ec9c10fdd160112ebecf4695d8526ebef6a62fb55b1d83c8623c9bc2c91:v1.14.6
 provisioning:
   diskSelector:
     match: disk.wwid == "eui.5cd2e42891a3b8a6"

@@ -1,6 +1,7 @@
 #!/bin/bash
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-ln -sf "$SCRIPT_DIR/.gitconfig" ~/.gitconfig
+mkdir -p ~/.config/git
+ln -sf "$SCRIPT_DIR/.gitconfig" ~/.config/git/configln -sf "$SCRIPT_DIR/.gitconfig" ~/.gitconfig
 mkdir -p ~/.config/vim
 ln -sf "$SCRIPT_DIR/vim/vimrc" ~/.config/vim/
 ln -sf "$SCRIPT_DIR/shells/bash" ~/.config/

@@ -1,3 +1,3 @@
 #!/bin/bash
-# Symlink .gitconfig into home
-ln -sf $DOTFILES_PATH/.gitconfig ~/.gitconfig
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+ln -sf "$SCRIPT_DIR/.gitconfig" ~/.gitconfig

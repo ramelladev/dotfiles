@@ -4,7 +4,7 @@
 [gpg]
     format = ssh
 [gpg "ssh"]
-    program = devpod-ssh-signature
+    program = ssh-keygen
 [commit]
     gpgsign = true
 [user]

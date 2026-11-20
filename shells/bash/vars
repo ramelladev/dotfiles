@@ -2,3 +2,10 @@
 [[ -e ~/.1password/agent.sock ]] && export SSH_AUTH_SOCK=~/.1password/agent.sock
 [[ -e /home/linuxbrew/.linuxbrew/bin ]] && export HOMEBREW_PREFIX=/home/linuxbrew/.linuxbrew
 export PATH="$HOMEBREW_PREFIX/bin:$PATH:$HOME/.local/bin"
+export GIT_CONFIG_COUNT=6
+export GIT_CONFIG_KEY_0=user.name        GIT_CONFIG_VALUE_0="Brandon"
+export GIT_CONFIG_KEY_1=user.email       GIT_CONFIG_VALUE_1="brandon@ramella.dev"
+export GIT_CONFIG_KEY_2=user.signingkey  GIT_CONFIG_VALUE_2="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMHtZAsP+SlsxU5+N3M8nw3u39G6DjrIIsQakOkbCKsM"
+export GIT_CONFIG_KEY_3=gpg.format       GIT_CONFIG_VALUE_3=ssh
+export GIT_CONFIG_KEY_4=gpg.ssh.program  GIT_CONFIG_VALUE_4=ssh-keygen
+export GIT_CONFIG_KEY_5=commit.gpgsign   GIT_CONFIG_VALUE_5=true

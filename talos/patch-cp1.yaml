@@ -9,3 +9,8 @@ provisioning:
 apiVersion: v1alpha1
 kind: DHCPv4Config
 name: enp3s0
+---
+apiVersion: v1alpha1
+kind: Layer2VIPConfig
+name: 10.128.8.129
+link: enp3s0

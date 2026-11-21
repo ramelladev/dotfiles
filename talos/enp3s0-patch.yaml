@@ -14,3 +14,13 @@ apiVersion: v1alpha1
 kind: Layer2VIPConfig
 name: 10.128.8.129
 link: enp3s0
+---
+apiVersion: v1alpha1
+kind: VLANConfig
+name: enp3s0.160
+vlanID: 160
+vlanMode: 802.1q
+parent: enp3s0
+up: true
+addresses:
+    - address: 10.128.8.162/27

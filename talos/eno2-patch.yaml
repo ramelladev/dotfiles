@@ -24,3 +24,5 @@ parent: eno2
 up: true
 addresses:
     - address: 10.128.8.163/27
+routes:
+  - gateway: 10.128.8.190

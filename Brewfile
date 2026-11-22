@@ -10,3 +10,9 @@ brew "vim"
 brew "sops"
 # Age
 brew "age"
+# Flux CD
+brew "fluxcd"
+# Talos ctl
+brew "talosctl"
+# K9S
+brew "k9s"

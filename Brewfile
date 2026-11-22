@@ -16,3 +16,5 @@ brew "fluxcd"
 brew "talosctl"
 # K9S
 brew "k9s"
+# Tmux
+brew "tmux"

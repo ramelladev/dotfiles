@@ -5,6 +5,7 @@ alias la="ls --color -a"
 
 install-kube-config() {
   local SOPS_AGE_KEY
+  echo "Enter AGE Private Key: "
   read -rs SOPS_AGE_KEY
   mkdir -p ~/.kube ~/.talos
   SOPS_AGE_KEY="$SOPS_AGE_KEY" sops --decrypt ~/dotfiles/secrets/kube/config  > ~/.kube/config

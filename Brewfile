@@ -6,3 +6,7 @@ brew "kubernetes-cli"
 brew "starship"
 # Vim
 brew "vim"
+# Sops
+brew "sops"
+# Age
+brew "age"

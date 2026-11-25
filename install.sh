@@ -33,8 +33,8 @@ eval "$("$BREW" shellenv bash)"
 
 # --- Per-platform Brewfile ---
 case "$OS" in
-  Darwin) BUNDLE="$SCRIPT_DIR/Brewfile.macos" ;;
-  Linux)  BUNDLE="$SCRIPT_DIR/devcontainer-bundle" ;;
+  Darwin) BUNDLE="$SCRIPT_DIR/homebrew/mac-bundle" ;;
+  Linux)  BUNDLE="$SCRIPT_DIR/homebrew/devcontainer-bundle" ;;
   *) echo "Unsupported OS: $OS" >&2; exit 1 ;;
 esac
 

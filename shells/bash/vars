@@ -7,7 +7,17 @@ export GIT_CONFIG_KEY_0=user.name        GIT_CONFIG_VALUE_0="Brandon"
 export GIT_CONFIG_KEY_1=user.email       GIT_CONFIG_VALUE_1="brandon@ramella.dev"
 export GIT_CONFIG_KEY_2=user.signingkey  GIT_CONFIG_VALUE_2="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMHtZAsP+SlsxU5+N3M8nw3u39G6DjrIIsQakOkbCKsM"
 export GIT_CONFIG_KEY_3=gpg.format       GIT_CONFIG_VALUE_3=ssh
-export GIT_CONFIG_KEY_4=gpg.ssh.program  GIT_CONFIG_VALUE_4=ssh-keygen
+#export GIT_CONFIG_KEY_4=gpg.ssh.program  GIT_CONFIG_VALUE_4=ssh-keygen
+
+#Generated code block to set ssh.program based on if repo is being edited on my Mac, linux laptop, or a dev container
+_git_ssh_prog=ssh-keygen
+for _p in "/Applications/1Password.app/Contents/MacOS/op-ssh-sign" "/opt/1Password/op-ssh-sign"; do
+  [[ -x $_p ]] && { _git_ssh_prog=$_p; break; }
+done
+export GIT_CONFIG_KEY_4=gpg.ssh.program  GIT_CONFIG_VALUE_4="$_git_ssh_prog"
+unset _p _git_ssh_prog
+#
+
 export GIT_CONFIG_KEY_5=commit.gpgsign   GIT_CONFIG_VALUE_5=true
 
 # Fall back to xterm-256color if current TERM has no terminfo entry

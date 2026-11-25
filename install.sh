@@ -9,6 +9,7 @@ mkdir -p ~/.config/vim ~/.config/tmux
 ln -sf  "$SCRIPT_DIR/vim/vimrc"      ~/.config/vim/vimrc
 ln -sfn "$SCRIPT_DIR/shells/bash"    ~/.config/bash
 ln -sf  "$SCRIPT_DIR/shells/bashrc"  ~/.bashrc
+ln -sf  "$SCRIPT_DIR/shells/bashrc"  ~/.bash_profile
 ln -sf  "$SCRIPT_DIR/tmux/tmux.conf" ~/.config/tmux/tmux.conf
 
 # --- Find Homebrew wherever it lives, install only if missing ---

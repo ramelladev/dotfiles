@@ -1,0 +1,33 @@
+tap "siderolabs/tap", trusted: true
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Programmable completion for Bash 4.2+
+brew "bash-completion@2"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Development kit for the Java programming language
+brew "openjdk"
+# Command-line shell and scripting language
+brew "powershell"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# CLI for out-of-band management of Kubernetes nodes created by Talos
+brew "siderolabs/tap/talosctl", trusted: true
+# Terminal-based AI coding assistant
+cask "claude-code"
+# UI to create reproducible developer environments based on a devcontainer.json
+cask "devpod"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Menu bar toolkit with keep-awake, system monitor and volume mixer
+cask "vorssaint"

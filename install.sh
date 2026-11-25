@@ -9,5 +9,5 @@ NONINTERACTIVE=1 /bin/bash -c \
       https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
 cd $SCRIPT_DIR
-brew bundle install
+brew bundle install --file $SCRIPT_DIR/devcontainer-bundle
 
